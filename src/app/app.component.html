@@ -1,0 +1,14 @@
+<h2>Backlog labels for different services</h2>
+
+ <div *ngFor="let backlogLabel of backlogLabels">
+   <h3>
+     <a [title]="backlogLabel.name" routerLink="/loadSports">
+{{backlogLabel.name}}
+     </a>
+   </h3>
+ </div>
+
+
+ <div class="container">
+   <router-outlet></router-outlet>
+ </div>
